@@ -1,0 +1,2 @@
+# multi-environment
+maven多环境配置及结合assembly插件的多环境配置
