@@ -131,7 +131,7 @@
                         <configuration>
                             <skipAssembly>${dev.skipAssembly}</skipAssembly>
                             <descriptors>
-                                <descriptor>src/main/assembly/conf/${env.mode}/assembly.xml</descriptor>
+                                <descriptor>src/main/assembly/assembly.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
@@ -145,7 +145,7 @@
                         <configuration>
                             <skipAssembly>${test.skipAssembly}</skipAssembly>
                             <descriptors>
-                                <descriptor>src/main/assembly/conf/${env.mode}/assembly.xml</descriptor>
+                                <descriptor>src/main/assembly/assembly.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
@@ -159,7 +159,7 @@
                         <configuration>
                             <skipAssembly>${prod.skipAssembly}</skipAssembly>
                             <descriptors>
-                                <descriptor>src/main/assembly/conf/${env.mode}/assembly.xml</descriptor>
+                                <descriptor>src/main/assembly/assembly.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
@@ -180,9 +180,6 @@
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
-            </resource>
-            <resource>
-                <directory>src/main/assembly/conf</directory>
             </resource>
             <resource>
                 <directory>src/main/assembly/conf/${env.mode}</directory>

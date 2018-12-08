@@ -19,10 +19,14 @@
             <directory>src/main/assembly/conf/${env.mode}</directory>
             <outputDirectory>conf</outputDirectory>
             <fileMode>0644</fileMode>
-            <excludes>
-                <!-- 过滤assembly.xml文件 -->
-                <exclude>assembly.xml</exclude>
-            </excludes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/assembly</directory>
+            <outputDirectory>/</outputDirectory>
+            <fileMode>0644</fileMode>
+            <includes>
+                <include>README.md</include>
+            </includes>
         </fileSet>
     </fileSets>
     <dependencySets>
