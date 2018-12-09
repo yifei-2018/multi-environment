@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2018/12/7
  */
 @Controller
-@RequestMapping("/assembly")
-public class AssemblyController {
+@RequestMapping("/profiles")
+public class ProfilesController {
 
-    private static final Logger logger = LoggerFactory.getLogger(AssemblyController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProfilesController.class);
 
     private static final String ENV_SUCCESS = PropertiesUtils.getValue("env.success");
 
